@@ -1,0 +1,16 @@
+[project]
+name = "green-ai-simulator"
+version = "0.1.0"
+description = "Simulador lógico para el proyecto Green AI"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "prometheus-client>=0.20.0",
+]
+
+[project.scripts]
+green-ai-simulator = "green_ai_simulator.adapters.cli.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

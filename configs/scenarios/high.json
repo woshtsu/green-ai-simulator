@@ -1,0 +1,11 @@
+{
+    "schema_version": "1.0",
+    "name": "high",
+    "description": "Escenario de alta carga para la validacion del motor lógico",
+    "base_cpu_utilization": 0.85,
+    "base_memory_utilization": 0.70,
+    "base_network_tx_bytes_per_sec": 50000000,
+    "base_network_rx_bytes_per_sec": 45000000,
+    "base_disk_write_bytes_per_sec": 1048576,
+    "noise_factor": 0.10
+}

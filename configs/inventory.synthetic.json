@@ -1,0 +1,85 @@
+{
+    "schema_version": "1.0",
+    "cluster_name": "sim-test-cluster",
+    "description": "Cluster ficticio pequeño para validar el motor lógico sin carga real",
+    "nodes": [
+        {
+            "id": "node-01",
+            "logical_cpus": {
+                "value": 4,
+                "unit": "count",
+                "origin": "synthetic_fixture"
+            },
+            "memory": {
+                "value": 17179869184,
+                "unit": "bytes",
+                "origin": "synthetic_fixture"
+            },
+            "interfaces": [
+                {
+                    "name": "eth0",
+                    "capacity": {
+                        "value": 125000000,
+                        "unit": "bytes_per_second",
+                        "origin": "modeling_assumption"
+                    }
+                }
+            ],
+            "filesystems": [
+                {
+                    "device": "/dev/sda1",
+                    "mountpoint": "/",
+                    "fstype": "ext4",
+                    "capacity": {
+                        "value": 53687091200,
+                        "unit": "bytes",
+                        "origin": "synthetic_fixture"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "node-02",
+            "logical_cpus": {
+                "value": 8,
+                "unit": "count",
+                "origin": "synthetic_fixture"
+            },
+            "memory": {
+                "value": 34359738368,
+                "unit": "bytes",
+                "origin": "synthetic_fixture"
+            },
+            "interfaces": [
+                {
+                    "name": "eth0",
+                    "capacity": {
+                        "value": 125000000,
+                        "unit": "bytes_per_second",
+                        "origin": "modeling_assumption"
+                    }
+                },
+                {
+                    "name": "eth1",
+                    "capacity": {
+                        "value": 125000000,
+                        "unit": "bytes_per_second",
+                        "origin": "modeling_assumption"
+                    }
+                }
+            ],
+            "filesystems": [
+                {
+                    "device": "/dev/nvme0n1",
+                    "mountpoint": "/",
+                    "fstype": "xfs",
+                    "capacity": {
+                        "value": 107374182400,
+                        "unit": "bytes",
+                        "origin": "synthetic_fixture"
+                    }
+                }
+            ]
+        }
+    ]
+}
