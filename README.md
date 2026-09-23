@@ -57,7 +57,7 @@ green-ai-simulator run \
 ```
 
 ### Integración con Monitoring
-Las métricas expuestas contienen las etiquetas `cluster` (el UUID del run), `node` y `origin="simulated"`. El servicio de **Monitoring** (Prometheus scraper) debe configurarse para leer el endpoint de este simulador de la siguiente manera:
+Las métricas expuestas contienen las etiquetas `cluster` (`sim-run-<uuid>`), `node` y `origin="simulated"`. Prometheus recolecta `/metrics` del Simulator y Monitoring consulta Prometheus. Configurar Monitoring con `monitoring.prometheus.instance-label=node` para preservar el ID del inventario. La integración requiere:
 1. El scrapeo debe ocurrir preferiblemente cada `5s` o `15s`.
 2. Las consultas en el frontend/gateway se pueden filtrar por `cluster=sim-run-<uuid>`.
 3. El simulador finaliza su proceso (stale) al completarse la `duration-seconds`.
@@ -68,3 +68,7 @@ Puedes construir y ejecutar el contenedor que automáticamente se pone en modo `
 docker build -t green-ai-simulator .
 docker run -p 9090:9090 green-ai-simulator
 ```
+
+## Modelo de base de datos
+
+El [modelo de BD](docs/modelo-bd.md) incluye el diagrama recibido el 2026-09-22, las tres tablas completas y las correspondencias de identidad, unidades y procedencia. Documenta los límites actuales y los requisitos del futuro adaptador de inventario.

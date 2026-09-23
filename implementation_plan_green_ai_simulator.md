@@ -225,7 +225,7 @@ La integración completa Simulator → Prometheus → Monitoring es un hito post
 
 No bloquear el motor por falta de infraestructura. Implementar ahora puertos y fixtures; agregar adaptadores cuando existan datos y autorización concreta.
 
-- Supabase: solo se conocen nombres tentativos de `hardware` y `logs`; DDL, tipos, claves e índices siguen sin confirmar. Las credenciales previamente expuestas deben considerarse comprometidas: no usarlas ni probarlas.
+- Supabase: el esquema de `usuario`, `hardware` y `logs` está confirmado por la extracción del usuario; consultar docs/modelo-bd.md para tipos, claves, índices, defaults y RLS. Las credenciales previamente expuestas deben considerarse comprometidas: no usarlas ni probarlas.
 - Un adaptador futuro de inventario podrá leer exclusivamente campos necesarios de `hardware`, con credenciales rotadas y mínimos permisos. No acceder a `usuario`, no escribir `logs` y no otorgar acceso general a tablas por compartir instancia.
 - Confirmar si `ram_gb` representa GB decimales o GiB antes de convertir. `max_watts` no es una curva de consumo calibrada; watts representa potencia, no energía. Conservar datos no utilizados como metadatos identificados, sin derivar resultados falsos.
 - El inventario real debe fijarse en un snapshot por run. Procedencia observada del inventario y procedencia simulada de resultados son campos diferentes.
@@ -242,3 +242,7 @@ Entregar rutas y comandos concretos, ejemplo de un run cuando esté autorizado e
 ### Mensaje sugerido para iniciar al siguiente agente
 
 > Implementa el primer incremento de green-ai-simulator siguiendo este plan y los documentos de referencia. Empieza revisando el estado actual de la carpeta y las instrucciones aplicables. Trabaja solo en este repositorio, conserva el núcleo Python independiente y usa fixtures explícitamente sintéticos. Respeta la separación entre reloj lógico offline y exportación realtime 1x, persiste cada run y publica origin=simulated con identidad propia por ejecución. No accedas a Supabase ni generes carga real o acciones Kubernetes. No repitas pruebas ni el smoke de Monitoring. La instrucción previa de detener pruebas debe respetarse: si no se autoriza verificarlas en esta nueva implementación, deja las verificaciones del simulador preparadas y reportadas como pendientes. Avanza por los pasos del plan, registra decisiones y entrega un estado honesto de lo implementado y lo validado.
+
+## Referencia de BD actualizada — 2026-09-22
+
+Consultar el [modelo de BD](docs/modelo-bd.md): diagrama y campos completos de `usuario`, `hardware` y `logs`, con mapeos y limitaciones de integración. El diagrama aporta tipos y relaciones; la extracción SQL del usuario confirma tipos y nulabilidad. La extracción completa confirma defaults, longitudes/precisión, restricciones, índices y RLS; verificación documental del esquema cerrada. Monitoring conserva Prometheus como fuente y Simulator conserva JSON/JSONL como persistencia; el acceso a inventario SQL es futuro. Esta referencia actualiza las suposiciones del esquema, sin ampliar el catálogo de métricas ni implementar acceso a BD.
