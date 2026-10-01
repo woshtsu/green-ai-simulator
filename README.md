@@ -71,4 +71,23 @@ docker run -p 9090:9090 green-ai-simulator
 
 ## Modelo de base de datos
 
+## Verificación de entrega (2026-09-30)
+
+La imagen instala dependencias mediante `uv sync --locked --no-dev` y excluye entornos locales, secretos y runs del contexto de construcción. Se rechazan duraciones no positivas y el límite de 100 MiB se comprueba antes de escribir cada registro completo.
+
+Cinco pruebas pasaron dentro de Docker con Python 3.12: determinismo/etiquetas, duración inválida, límite de escritura, finalización offline con JSONL y manifest, y exporter realtime con parada SIGTERM en estado STOPPED. El flujo Simulator → Prometheus → Monitoring → Data Processing también devolvió las cinco métricas preservando su origen simulado.
+
+Desde este repositorio, en PowerShell:
+
+```powershell
+docker build -t green-ai-simulator:local .
+docker run --rm --entrypoint python --mount "type=bind,source=$($PWD.Path)\tests,target=/tests,readonly" green-ai-simulator:local -m unittest discover -s /tests -v
+```
+
+La simulación termina al alcanzar su duración; no equivale a una fuente permanente. Los archivos `/app/runs` pertenecen al contenedor: copiarlos con `docker cp` antes de eliminarlo o recrearlo si se necesitan como evidencia. El Compose del workspace utiliza el puerto interno 8000; el ejemplo independiente de arriba utiliza 9090.
+
+No se incluye lectura de inventario Supabase, control HTTP de runs ni Kubernetes en este incremento. El inventario sintético está declarado como tal; no se calculan watts o energía a partir de CPU.
+
+### Referencia del modelo de datos
+
 El [modelo de BD](docs/modelo-bd.md) incluye el diagrama recibido el 2026-09-22, las tres tablas completas y las correspondencias de identidad, unidades y procedencia. Documenta los límites actuales y los requisitos del futuro adaptador de inventario.

@@ -10,6 +10,9 @@ from green_ai_simulator.domain.engine import create_initial_state, compute_next_
 from green_ai_simulator.adapters.persistence.run_logger import RunLogger
 
 def run_simulation(args: Any) -> int:
+    if args.duration_seconds <= 0:
+        print("Error: duration_seconds must be > 0", file=sys.stderr)
+        return 2
     try:
         inv = parse_inventory_json(args.inventory)
         validate_inventory(inv)
@@ -22,7 +25,7 @@ def run_simulation(args: Any) -> int:
     if args.tick_seconds <= 0:
         print("Error: tick_seconds must be > 0", file=sys.stderr)
         return 2
-        
+
     if args.duration_seconds % args.tick_seconds != 0:
         print("Error: duration_seconds must be a multiple of tick_seconds", file=sys.stderr)
         return 2

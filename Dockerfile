@@ -12,12 +12,13 @@ WORKDIR /app
 # Instalar uv
 RUN pip install uv
 
-# Copiar dependencias y configuración
-COPY pyproject.toml README.md ./
+# Copiar los metadatos de dependencias y el lockfile
+COPY pyproject.toml uv.lock README.md ./
 COPY src/ ./src/
 
-# Instalar en el sistema (dentro del contenedor)
-RUN uv pip install --system -e .
+# Instalar exactamente las dependencias fijadas por uv.lock
+RUN uv sync --locked --no-dev
+ENV PATH="/app/.venv/bin:$PATH"
 
 # Copiar directorios de configuración y preparar salida
 COPY configs/ ./configs/

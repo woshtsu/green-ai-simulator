@@ -5,6 +5,8 @@ from pathlib import Path
 from dataclasses import asdict
 from typing import Dict, Any
 
+MAX_OUTPUT_BYTES = 100 * 1024 * 1024
+
 class RunLogger:
     def __init__(self, output_dir_base: str, mode: str, seed: int, duration_sec: int, tick_sec: int, inv_path: str, scn_path: str):
         self.uuid = str(uuid.uuid4())
@@ -48,12 +50,11 @@ class RunLogger:
         
     def write_sample(self, state: Any) -> bool:
         """Escribe un snapshot al jsonl. Retorna False si se excede el límite de tamaño."""
-        # Limite duro de 100MB por seguridad
-        if self.metadata["bytes_written"] > 100 * 1024 * 1024:
-            return False
-        
         line = json.dumps(asdict(state)) + "\n"
         b_len = len(line.encode('utf-8'))
+        # Enforce the limit against the next complete JSONL record.
+        if self.metadata["bytes_written"] + b_len > MAX_OUTPUT_BYTES:
+            return False
         self.samples_f.write(line)
         self.metadata["bytes_written"] += b_len
         return True
