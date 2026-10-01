@@ -44,7 +44,7 @@ class ValidationError(Exception):
 
 LIMITS = {
     "max_nodes": 100,
-    "max_total_cpus": 1000,
+    "max_total_cpus": 4096,
     "max_interfaces_per_node": 10,
     "max_fs_per_node": 20,
 }

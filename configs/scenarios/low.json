@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "name": "low",
+  "description": "Perfil sintético de demostración; no calibrado con históricos",
+  "base_cpu_utilization": 0.2,
+  "base_memory_utilization": 0.3,
+  "base_network_tx_bytes_per_sec": 1000000,
+  "base_network_rx_bytes_per_sec": 1000000,
+  "base_disk_write_bytes_per_sec": 262144,
+  "noise_factor": 0.05
+}

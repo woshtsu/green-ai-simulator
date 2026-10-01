@@ -1,5 +1,7 @@
 # Green AI Simulator
 
+Inventario de 50 equipos y escenarios para la demostración: [guía MVP 1](docs/inventario-mvp1.md).
+
 Simulador lógico, ejecutable mediante CLI, con persistencia local y un adaptador Prometheus para el proyecto Green AI.
 
 ## Alcance del Incremento 1

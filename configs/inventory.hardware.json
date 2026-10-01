@@ -1,0 +1,1757 @@
+{
+  "schema_version": "1.0",
+  "cluster_name": "inventory-hardware-mvp1",
+  "description": "Copia del inventario entregado el 2026-10-01. Fuente primaria pendiente; GB decimal y cpu_cores como CPUs lógicas son supuestos. Red 1 Gbit/s y disco 100 GB sintéticos. No modela potencia.",
+  "nodes": [
+    {
+      "id": "HW001",
+      "logical_cpus": {
+        "value": 64,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 32000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW002",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW003",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 32000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW004",
+      "logical_cpus": {
+        "value": 64,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW005",
+      "logical_cpus": {
+        "value": 64,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 128000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW006",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 128000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW007",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW008",
+      "logical_cpus": {
+        "value": 64,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW009",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 32000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW010",
+      "logical_cpus": {
+        "value": 16,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW011",
+      "logical_cpus": {
+        "value": 16,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 128000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW012",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW013",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 32000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW014",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 32000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW015",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW016",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 128000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW017",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW018",
+      "logical_cpus": {
+        "value": 16,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 128000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW019",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 128000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW020",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW021",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW022",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 32000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW023",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW024",
+      "logical_cpus": {
+        "value": 16,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 128000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW025",
+      "logical_cpus": {
+        "value": 64,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW026",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW027",
+      "logical_cpus": {
+        "value": 64,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 32000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW028",
+      "logical_cpus": {
+        "value": 64,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW029",
+      "logical_cpus": {
+        "value": 64,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 128000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW030",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW031",
+      "logical_cpus": {
+        "value": 64,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 128000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW032",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 32000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW033",
+      "logical_cpus": {
+        "value": 16,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 32000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW034",
+      "logical_cpus": {
+        "value": 64,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW035",
+      "logical_cpus": {
+        "value": 64,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 32000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW036",
+      "logical_cpus": {
+        "value": 16,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 128000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW037",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW038",
+      "logical_cpus": {
+        "value": 16,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 32000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW039",
+      "logical_cpus": {
+        "value": 16,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 128000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW040",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW041",
+      "logical_cpus": {
+        "value": 16,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 128000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW042",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 32000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW043",
+      "logical_cpus": {
+        "value": 64,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW044",
+      "logical_cpus": {
+        "value": 16,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 32000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW045",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 32000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW046",
+      "logical_cpus": {
+        "value": 32,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 128000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW047",
+      "logical_cpus": {
+        "value": 64,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 128000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW048",
+      "logical_cpus": {
+        "value": 64,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 32000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW049",
+      "logical_cpus": {
+        "value": 64,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    },
+    {
+      "id": "HW050",
+      "logical_cpus": {
+        "value": 64,
+        "unit": "count",
+        "origin": "modeling_assumption"
+      },
+      "memory": {
+        "value": 64000000000,
+        "unit": "bytes",
+        "origin": "modeling_assumption"
+      },
+      "interfaces": [
+        {
+          "name": "eth0",
+          "capacity": {
+            "value": 125000000,
+            "unit": "bytes_per_second",
+            "origin": "modeling_assumption"
+          }
+        }
+      ],
+      "filesystems": [
+        {
+          "device": "/dev/sda1",
+          "mountpoint": "/",
+          "fstype": "ext4",
+          "capacity": {
+            "value": 100000000000,
+            "unit": "bytes",
+            "origin": "modeling_assumption"
+          }
+        }
+      ]
+    }
+  ]
+}
